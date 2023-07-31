@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
+}
+
+model Task {
+  id        Int     @id @default(autoincrement())
+  name      String
+  status    String
+  createdAt String? @default("CURRENT_TIMESTAMP")
+  updatedAt String? @default("CURRENT_TIMESTAMP")
+}

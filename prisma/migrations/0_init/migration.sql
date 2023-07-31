@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Task" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "status" TEXT NOT NULL,
+    "createdAt" TEXT DEFAULT 'CURRENT_TIMESTAMP',
+    "updatedAt" TEXT DEFAULT 'CURRENT_TIMESTAMP'
+);
+
