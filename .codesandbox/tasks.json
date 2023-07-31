@@ -6,6 +6,10 @@
       "command": "pnpm install"
     },
     {
+      "name": "Generating Prisma client",
+      "command": "pnpm prisma generate"
+    },
+    {
       "name": "Building Workspace",
       "command": "pnpm build"
     }
